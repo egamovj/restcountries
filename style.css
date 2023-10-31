@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px -2px;
+}
+
+.navbar {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+    height: 48px;
+    position: relative;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    column-gap: 15px;
+    padding-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px -2px;
+    margin-top: 40px;
+    width: 480px;
+}
+
+.search-bar input[type="text"] {
+    background-color: rgb(255, 255, 255);
+    color: rgb(17, 21, 23);
+    border: none;
+    height: 100%;
+    width: 480px;
+    border: 1px solid transparent;
+}
+
+.regions-text {
+    text-align: center;
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 40px;
+    width: 100%;
+    column-gap: 40px;
+}
+
+.box img {
+    object-fit: cover;
+    height: 160px;
+    max-width: 224px;
+    width: 100%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.main-box {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 264px;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 2px 2px 15px 2px;
+    transition: all 300ms ease-in-out 0s;
+    cursor: pointer;
+}
+
+.main-box:hover {
+    transform: scale(0.96);
+}
+
+.text-box {
+    padding: 24px 24px 46px;
+}
+
+.text-box h3 {
+    margin-bottom: 16px;
+    font-size: 18px;
+    color: rgb(17, 21, 23);
+}
+
+.text-box h4 {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+@media screen and (max-width:576px) {
+    .container .box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
