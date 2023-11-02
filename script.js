@@ -2,7 +2,6 @@ const box = document.querySelector('.box');
 const countries = fetch('https://restcountries.com/v3.1/all');
 const searchInput = document.getElementById('search');
 
-// Функция для фильтрации стран по введенному тексту
 function filterCountries(text) {
     const mainBoxes = document.querySelectorAll('.main-box');
     mainBoxes.forEach(mainBox => {
