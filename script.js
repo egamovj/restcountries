@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const loading = document.querySelector('.loading');
     const notFoundMessage = document.querySelector('.notFoundMessage');
     const input = document.querySelector('.search');
-    const itemsPerPage = 8;
+    const itemsPerPage = 16;
     let currentPage = 1;
     let totalItems = 0;
     let newData = [];
