@@ -123,7 +123,6 @@ form input[type="text"] {
     align-items: center;
     column-gap: 10px;
     list-style: none;
-    max-width: 1280px;
     margin: 0 auto;
     margin-top: 50px;
 }
@@ -135,11 +134,15 @@ form input[type="text"] {
     border: 1px solid grey;
     border-radius: 50%;
     cursor: pointer;
+    width: 50px;
+    height: 50px;
+    text-align: center;
 }
 
 .pagination li.active {
     background-color: #007bff;
     color: #fff;
+    transform: scale(0.96);
 }
 
 .notFoundMessage {
